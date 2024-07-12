@@ -33,7 +33,7 @@ Ensure your repository does not contain any personal or team tokens/access infor
 ### Team Information:
 Team Member 1:
  - Full Name: Fillippo Tramonto
- - Womanium Program Enrollment ID (see Welcome Email, format- WQ24-xxxxxxxxxxxxxxx):
+ - Womanium Program Enrollment ID (see Welcome Email, format- WQ24-YrFsmsmnYnkaGXf):
 
 
 Team Member 2:
