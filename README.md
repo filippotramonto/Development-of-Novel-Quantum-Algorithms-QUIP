@@ -49,6 +49,7 @@ Team Member 3:
 ### Project Solution:
 Our project solution is shown in the 2 Jupyter notebooks, present in this repository:
 [Project_Step_1_Notebook.ipynb](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/Project%20Step%201/Project_Step_1_Notebook.ipynb)
+
 [Project_Step_2_Notebook.ipynb](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/Project%20Step%202/Project_Step_2_Notebook.ipynb)
 
 The Step 1 notebook contains the implementation of gate-optimized phase circuit proposed by the paper, with all detailed explanations and tests.
