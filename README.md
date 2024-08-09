@@ -33,7 +33,7 @@ Ensure your repository does not contain any personal or team tokens/access infor
 ### Team Information:
 Team Member 1:
  - Full Name: Fillippo Tramonto
- - Womanium Program Enrollment ID (see Welcome Email, format- WQ24-YrFsmsmnYnkaGXf):
+ - Womanium Program Enrollment ID (WQ24-YrFsmsmnYnkaGXf):
 
 
 Team Member 2:
@@ -48,15 +48,21 @@ Team Member 3:
 
 ### Project Solution:
 Our project solution is shown in the 2 Jupyter notebooks, present in this repository:
-Step 1.ipynb
-Step 2.ipynb
+[Project_Step_1_Notebook.ipynb](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/Project%20Step%201/Project_Step_1_Notebook.ipynb)
+[Project_Step_2_Notebook.ipynb](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/Project%20Step%202/Project_Step_2_Notebook.ipynb)
 
-In Step 1 notebook is present the implementation of gate-optimized phase circuit proposed by the paper, with all detailed explanations and tests.
-In Step 2 notebook is present the implementation of the whole protocol described in the paper, with all detailed explanations and tests.
+The Step 1 notebook contains the implementation of gate-optimized phase circuit proposed by the paper, with all detailed explanations and tests.
+
+The Step 2 notebook contains the implementation of the whole protocol described in the paper, with all detailed explanations and tests.
 At the end of the Step 2 notebook is present also the resource estimation.
 
-In the repository you can find also the qmod and qprog files produced in the 2 steps.
+The files regarding the 2 steps are subdivided in two folders: [Step 1](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/tree/main/Project%20Step%201) and [Step 2](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/tree/main/Project%20Step%202).
+
+The qmod and qprog files produced in the 2 steps are locted in their respective folders. 
+
+The folder [Step 1](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/tree/main/Project%20Step%201) contains also 2 Python files needed to execute some comparison test in the Step 1 notebook that uses the original paper code (ancilla.py and tof_sim.py).
 
 ### Project Presentation Deck:
-_Link a 5min. presentation recording or deck here._
+[Presentation video recording](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/QUIP_Team_Presenation.wmv)
+[Presentation Deck](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/QUIP_Presentation.pdf)
 
