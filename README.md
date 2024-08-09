@@ -47,8 +47,15 @@ Team Member 3:
 
 
 ### Project Solution:
-_Include a comprehensive summary of all important information about your project solution here._
-All necessary code files and any additional information required to judge your project solution should be included in the repository. 
+Our project solution is shown in the 2 Jupyter notebooks, present in this repository:
+Step 1.ipynb
+Step 2.ipynb
+
+In Step 1 notebook is present the implementation of gate-optimized phase circuit proposed by the paper, with all detailed explanations and tests.
+In Step 2 notebook is present the implementation of the whole protocol described in the paper, with all detailed explanations and tests.
+At the end of the Step 2 notebook is present also the resource estimation.
+
+In the repository you can find also the qmod and qprog files produced in the 2 steps.
 
 ### Project Presentation Deck:
 _Link a 5min. presentation recording or deck here._
