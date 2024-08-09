@@ -64,5 +64,6 @@ The folder [Step 1](https://github.com/filippotramonto/Development-of-Novel-Quan
 
 ### Project Presentation Deck:
 [Presentation video recording](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/QUIP_Team_Presenation.wmv)
+
 [Presentation Deck](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/QUIP_Presentation.pdf)
 
