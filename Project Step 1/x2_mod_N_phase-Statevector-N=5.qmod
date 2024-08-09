@@ -1,0 +1,66 @@
+qfunc MCZPhase(phase: real, target: qbit, controls: qbit[]) {
+  control (controls) {
+    PHASE(phase * pi, target);
+  }
+}
+
+qfunc qft_inner_iteration(m: int, kk: int, reg: qbit[]) {
+  MCZPhase(1 / (2 ** (((m + kk) + 1) - kk)), reg[(m + kk) + 1], reg[kk]);
+}
+
+qfunc qft_outer_iteration(k: int, reg: qbit[]) {
+  repeat (m: (reg.len - ((reg.len - k) - 1)) - 1) {
+    qft_inner_iteration(m, (reg.len - k) - 1, reg);
+  }
+  H(reg[(reg.len - k) - 1]);
+}
+
+qfunc qft_custom(reg: qbit[]) {
+  repeat (k: reg.len) {
+    qft_outer_iteration(k, reg);
+  }
+}
+
+qfunc iqft_custom(reg: qbit[]) {
+  invert {
+    qft_custom(reg);
+  }
+}
+
+qfunc phase_add_iteration(k: int, in_phase: real, target: qbit[], controls: qbit[]) {
+  MCZPhase(((2 ** ((target.len - k) - 1)) * in_phase) % 2, target[k], controls);
+}
+
+qfunc phase_add_1qubit(in_phase: real, target: qbit[], control: qbit) {
+  repeat (k: target.len) {
+    phase_add_iteration(k, in_phase, target, control);
+  }
+}
+
+qfunc x2_mod_N_phase(x: qbit[], y: qbit[]) {
+  hadamard_transform(x);
+  hadamard_transform(y);
+  counter: qbit[];
+  allocate(2, counter);
+  hadamard_transform(counter);
+  iqft_custom(counter);
+  phase_add_1qubit(0.4, y, counter[0]);
+  phase_add_1qubit(0.8, y, counter[1]);
+  qft_custom(counter);
+  iqft_custom(counter);
+  phase_add_1qubit(0.8, y, counter[0]);
+  phase_add_1qubit(1.6, y, counter[1]);
+  qft_custom(counter);
+  iqft_custom(counter);
+  phase_add_1qubit(1.6, y, counter[0]);
+  phase_add_1qubit(3.2, y, counter[1]);
+  qft_custom(counter);
+  hadamard_transform(counter);
+  iqft_custom(y);
+}
+
+qfunc main(output x: qnum, output y: qnum) {
+  allocate(2, x);
+  allocate(3, y);
+  x2_mod_N_phase(x, y);
+}
