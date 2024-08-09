@@ -60,7 +60,7 @@ The files regarding the 2 steps are subdivided in two folders: [Step 1](https://
 
 The qmod and qprog files produced in the 2 steps are locted in their respective folders. 
 
-The folder [Step 1](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/tree/main/Project%20Step%201) contains also 2 Python files needed to execute some comparison test in the Step 1 notebook that uses the original paper code (ancilla.py and tof_sim.py).
+The folder [Step 1](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/tree/main/Project%20Step%201) contains also 2 Python files (ancilla.py and tof_sim.py) needed to execute some comparison test in the Step 1 notebook that uses the original paper code.
 
 ### Project Presentation Deck:
 [Presentation video recording](https://github.com/filippotramonto/Development-of-Novel-Quantum-Algorithms-QUIP/blob/main/QUIP_Team_Presenation.wmv)
